@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Grade Point Homepage</title>
+
+    <style>
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image:url("mcgill.jpg");
+	background-size: cover;
+	/*-webkit-filter: blur(1px);*/
+	z-index: 0;
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+	z-index: 2;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #DC143C;
+}
+
+.links{
+	position: absolute;
+	top: calc(50% - 300px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+	font-size:18px;
+}
+.links a{
+	font-size:18px;
+	color:red;
+	text-decoration:none;
+ }
+
+.description{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+	color: navy;
+	font-family: 'Exo', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Grade<span>Point</span></div>
+		</div>
+		<br>
+		<div class="links">
+			<a href="login.html">Login</a></br>
+			<a href="catalogue.html">Catalogue</a></br>
+			<a href="homepage.html">Homepage</a>
+		</div>
+                <div class="description">
+		<p>The Grade Point store was created by Lucien George, Ossama Ahmed and Anthony Plescia.</p>
+		<p> We sell GPAs from 4.0 to 3.3.</p>
+                </div>
+
+</body>
+
+</html>

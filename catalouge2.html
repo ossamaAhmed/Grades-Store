@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Grade Point Login Page</title>
+
+    <style>
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #fff;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+.body{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image:url("mcgill.jpg");
+	background-size: cover;
+	/*-webkit-filter: blur(1px);*/
+	z-index: 0;
+}
+
+.grad{
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.header{
+	position: absolute;
+	top: calc(50% - 275px);
+	left: calc(50% - 500px);
+	z-index: 2;
+	font-size: 35px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #DC143C;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 340px);
+	left: calc(50% - 300px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+	color: #DC143C;
+	font-family: 'Exo', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+
+}
+.links{
+	position: absolute;
+	top: calc(50% - 300px);
+	left: calc(50% - 800px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+	z-index: 2;
+	font-size:18px;
+}
+.links a{
+	font-size:18px;
+	color:red;
+	text-decoration:none;
+ }
+
+.login a{
+	font-size:18px;
+	color:red;
+	text-decoration:none;
+
+ }
+.login input[type=submit]{
+	position: relative;
+	left: 267px;
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #a18d6c;
+	font-family: 'Exo', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Grade<span>Point</span></div>
+		</div>
+		<br>
+		<div class="links">
+			<a href="register.html">Sign up</a></br>
+			<a href="catalogue.html">Catalogue</a></br>
+			<a href="homepage.html">Homepage</a>
+		</div>
+		<div class="login">
+						<form action="./cgi-bin/Purchase.py" method="get">
+			<!--Not sure how we are supposed to get username into hidden field-->
+			<input type="hidden" name="username" value="">
+			<table>
+				<tr>
+					<td>
+					<h6>GPA of 4.0 (A)</h6>
+					<img src="FirstGrade.jpg" alt="Grade A" height="150"/><p>Insert Description Here</p>
+					<input type="checkbox" name="item1" value="on" unchecked>
+					<input type="text" name="quantity1" value=0>
+					</td>
+					
+					<td>
+					<h6>GPA of 3.7 (A-)</h6>
+					<img src="SecondGrade.jpg" alt="Grade A" height="150"/>
+					<p>Insert Description Here</p>
+					<input type="checkbox" name="item2" value="on" unchecked>
+					<input type="text" name="quantity2" value=0>
+					</td>
+					
+					<td>
+					<h6>GPA of 3.3 (B+)</h6>
+					<img src="ThirdGrade.jpg" alt="Grade A" height="150" />
+					<p>Insert Description Here</p>
+					<input type="checkbox" value="item3_y" unchecked>
+					<input type="text" name="quantity3" value=0>
+					</td>
+				</tr>
+
+			</table>
+			<!-- need to properly invoke script on submit somehow..also some formatting stuff-->
+			<input type="submit" value="submit">
+
+			</form>
+		</div>
+
+</body>
+
+</html>
